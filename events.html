@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Event propogation</title>
+        <style>
+           #parent{
+               border:10px dotted green;
+               display:inline-block;
+               width:200px;
+               height:200px;
+           }
+
+           #child{
+                border:10px dotted blue;
+               display:inline-block;
+               width:100px;
+               height:100px;
+           }
+           
+        </style>
+    </head>
+    <body>
+        <div id="parent" >
+            <div  id="child" >
+                 <h3>Child Element</h3>
+            </div>
+            <h3>Parent Element</h3>
+        </div>
+
+        <script>
+            var parentElement = document.getElementById("parent");
+            parentElement.addEventListener("click", function(){
+                alert("Clicked parent element");
+            }, true);
+
+            var childElement = document.getElementById("child");
+            childElement.addEventListener("click", function(){
+                alert("Clicked child element");
+            },true);
+
+            /**
+             * Event propogation indicates the direction in which the events gets triggered.
+             * By default event bubbling happens. i.e the events trigger from child to parent.
+             * 
+             * To reverse the event propogation from bubbling to capture need to pass true to the 
+             * addEvent listner function in the 3rd parameter.
+             * eg: addEventListener(Event,Handler,true/false);
+             * **/
+            
+        </script>
+    </body>
+</html>
