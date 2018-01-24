@@ -4,7 +4,7 @@ console.log(typeof fname);
 
 var price=23.45;
 console.log(price);
-console.log(typeof price); 
+console.log(typeof price);  
 
 var lname;
 console.log(lname);

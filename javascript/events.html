@@ -27,13 +27,15 @@
         </div>
 
         <script>
-            var parentElement = document.getElementById("parent");
-            parentElement.addEventListener("click", function(){
+           
+           var parentElement = document.getElementById("parent");
+            parentElement.addEventListener("click", function(evt){
                 alert("Clicked parent element");
+                evt.stopPropagation()
             }, true);
 
             var childElement = document.getElementById("child");
-            childElement.addEventListener("click", function(){
+            childElement.addEventListener("click", function(evt){
                 alert("Clicked child element");
             },true);
 
