@@ -6,7 +6,7 @@ class Person{
     constructor(fname:string,lname:string,age:number){
         this.fname=fname;
         this.lname=lname;
-        this.age=age;
+        this.age=age; 
     }
 }
 
