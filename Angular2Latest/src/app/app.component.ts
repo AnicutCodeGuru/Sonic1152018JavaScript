@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {Counter} from "./counter/counter";
 import {Clock} from "./clock/clock";
+import {TaskList} from "./todo/TodoTaskList";
 
 
 @Component({
