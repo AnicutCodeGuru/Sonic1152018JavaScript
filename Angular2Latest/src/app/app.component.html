@@ -1,22 +1,26 @@
-
-<div>
-  <tasklist></tasklist>
+<div class="container" >
+  <div class="row" >
+      <div class="col-md-2" >
+          <ul class="list-group">
+              <li class="list-group-item">
+                  <a routerLink="/clock" routerLinkActive="active" >Clock</a>
+              </li>
+              <li class="list-group-item">
+                  <a routerLink="/counter" routerLinkActive="active">Counter</a>
+              </li>
+              <li class="list-group-item">
+                  <a routerLink="/todo" routerLinkActive="active">Todo</a>
+              </li>
+              <li class="list-group-item">
+                  <a routerLink="/spinner" routerLinkActive="active">Spinner</a>
+              </li>
+            </ul>  
+      </div>
+      <div class="col-md-10" >
+          <router-outlet></router-outlet>
+      </div>
+  </div>
 </div>
-<!--div>
-  <counter></counter>
-  <counter></counter>
-  <counter></counter>
-  <counter></counter>
-  <counter></counter>
-  <counter></counter>
-  <counter></counter>
-  <counter></counter>
-  <clock></clock>
-  <clock></clock>
-  <clock></clock>
-  <clock></clock>
-  <clock></clock>
-  <clock></clock>
-  <clock></clock>
-</div-->
+
+
 
